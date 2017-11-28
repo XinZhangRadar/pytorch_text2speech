@@ -4,17 +4,6 @@ PyTorch implementation of convolutional networks-based text-to-speech synthesis 
 1. [arXiv:1710.07654](https://arxiv.org/abs/1710.07654): Deep Voice 3: 2000-Speaker Neural Text-to-Speech.
 2. [arXiv:1710.08969](https://arxiv.org/abs/1710.08969): Efficiently Trainable Text-to-Speech System Based on Deep Convolutional Networks with Guided Attention.
 
-
-
-## Audio samples
-
-- [DeepVoice3] Samples from the model trained on LJ Speech Dataset: https://www.dropbox.com/sh/uq4tsfptxt0y17l/AADBL4LsPJRP2PjAAJRSH5eta?dl=0
-- [Nyanko] Samples from the model trained on LJ Speech Dataset: https://www.dropbox.com/sh/q9xfgscgh3k5lqa/AACPgWCprBfNgjRravscdDYCa?dl=0
-
-## Notes on hyper parameters
-
-
-
 ## Requirements
 
 - Python 3
@@ -57,7 +46,7 @@ Basic usage of `train.py` is:
 python train.py --data-root=${data-root} --hparams="parameters you want to override"
 ```
 
-Suppose you will want to build a DeepVoice3-style model using LJSpeech dataset with default hyper parameters, then you can train your model by:
+Suppose you will want to build a Deep Voice 3-style model using LJSpeech dataset with default hyper parameters, then you can train your model by:
 
 ```
 python train.py --data-root=./data/ljspeech/ --hparams="use_preset=True,builder=text2speech"
